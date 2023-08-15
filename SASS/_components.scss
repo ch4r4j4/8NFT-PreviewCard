@@ -1,4 +1,7 @@
-
+$color-title: hsl(178, 100%, 50%);
+$color-softblue: hsl(215, 51%, 70%);
+$line-color: hsl(215, 32%, 27%);
+$white-text: hsl(0 0% 100%);
 .cube-image{
     width: 100%;
     border-radius: 0.5rem;
@@ -13,4 +16,22 @@
     margin-top: 2rem;
     border-radius: 0.7rem;
     box-shadow: 0px 15px 40px hsl(214, 51%, 8%);
+}
+.title{
+    color: $white-text;
+}
+.paragraph{
+    color: $color-softblue;
+}
+.days-left{
+    color: $color-softblue;
+}
+.price{
+    color: $color-title;
+}
+.name{
+    color: $color-softblue;
+    span{
+        color: $white-text;
+    }
 }
