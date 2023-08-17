@@ -22,9 +22,14 @@ $white-text: hsl(0 0% 100%);
 }
 .paragraph{
     color: $color-softblue;
+    font-weight: 300;
 }
 .days-left{
     color: $color-softblue;
+}
+.value{
+    font-weight: 400;
+    font-size: 13px;
 }
 .price{
     color: $color-title;

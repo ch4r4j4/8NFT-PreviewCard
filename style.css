@@ -23,10 +23,16 @@
 
 .paragraph {
   color: hsl(215, 51%, 70%);
+  font-weight: 300;
 }
 
 .days-left {
   color: hsl(215, 51%, 70%);
+}
+
+.value {
+  font-weight: 400;
+  font-size: 13px;
 }
 
 .price {
@@ -45,7 +51,6 @@ body {
   background: hsl(217, 54%, 11%) no-repeat fixed;
   padding-top: 50px;
   font-family: "Outfit", sans-serif;
-  font-size: 18px;
 }
 
 /*!
