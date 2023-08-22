@@ -2,12 +2,14 @@ $color-title: hsl(178, 100%, 50%);
 $color-softblue: hsl(215, 51%, 70%);
 $line-color: hsl(215, 32%, 27%);
 $white-text: hsl(0 0% 100%);
+$breakpint-mobile: 576px;
 .cube-image{
     width: 100%;
     border-radius: 0.5rem;
 }
-.avatar{
-    width: 1.5rem;
+#avatar{
+    width: auto;
+    height: 2rem;
 }
 .main{
     width: 16rem;
@@ -16,6 +18,9 @@ $white-text: hsl(0 0% 100%);
     margin-top: 2rem;
     border-radius: 0.7rem;
     box-shadow: 0px 15px 40px hsl(214, 51%, 8%);
+    @media (max-width:$breakpint-mobile) {
+        width: 90%;
+    }
 }
 .title{
     color: $white-text;
@@ -23,20 +28,32 @@ $white-text: hsl(0 0% 100%);
 .paragraph{
     color: $color-softblue;
     font-weight: 300;
+    @media (max-width:$breakpint-mobile) {
+        width: 90%;
+    }
 }
 .days-left{
     color: $color-softblue;
+    font-weight: normal !important;
+    display:flex;
+    gap: 0.4rem;
 }
-.value{
-    font-weight: 400;
+#value{
     font-size: 13px;
 }
 .price{
     color: $color-title;
+    display: flex;
+    gap:0.4rem;
 }
 .name{
+    padding-top: 4px;
     color: $color-softblue;
     span{
         color: $white-text;
     }
+    font-weight: normal !important;
+}
+.profile{
+    padding: 0.8rem;
 }

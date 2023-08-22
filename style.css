@@ -4,8 +4,9 @@
   border-radius: 0.5rem;
 }
 
-.avatar {
-  width: 1.5rem;
+#avatar {
+  width: auto;
+  height: 2rem;
 }
 
 .main {
@@ -16,6 +17,11 @@
   border-radius: 0.7rem;
   box-shadow: 0px 15px 40px hsl(214, 51%, 8%);
 }
+@media (max-width: 576px) {
+  .main {
+    width: 90%;
+  }
+}
 
 .title {
   color: hsl(0, 0%, 100%);
@@ -25,25 +31,40 @@
   color: hsl(215, 51%, 70%);
   font-weight: 300;
 }
+@media (max-width: 576px) {
+  .paragraph {
+    width: 90%;
+  }
+}
 
 .days-left {
   color: hsl(215, 51%, 70%);
+  font-weight: normal !important;
+  display: flex;
+  gap: 0.4rem;
 }
 
-.value {
-  font-weight: 400;
+#value {
   font-size: 13px;
 }
 
 .price {
   color: hsl(178, 100%, 50%);
+  display: flex;
+  gap: 0.4rem;
 }
 
 .name {
+  padding-top: 4px;
   color: hsl(215, 51%, 70%);
+  font-weight: normal !important;
 }
 .name span {
   color: hsl(0, 0%, 100%);
+}
+
+.profile {
+  padding: 0.8rem;
 }
 
 body {
