@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+.division {
+  border: 1px solid hsl(215, 51%, 70%) !important;
+}
+
 .cube-image {
   width: 100%;
   border-radius: 0.5rem;
@@ -7,6 +11,8 @@
 #avatar {
   width: auto;
   height: 2rem;
+  border: 1px solid #fff;
+  border-radius: 16px;
 }
 
 .main {
@@ -34,6 +40,7 @@
 @media (max-width: 576px) {
   .paragraph {
     width: 90%;
+    font-size: 1.15rem;
   }
 }
 
@@ -41,7 +48,13 @@
   color: hsl(215, 51%, 70%);
   font-weight: normal !important;
   display: flex;
+  justify-content: flex-end;
   gap: 0.4rem;
+}
+@media (max-width: 576px) {
+  .days-left {
+    font-size: 1.2rem;
+  }
 }
 
 #value {
@@ -53,6 +66,11 @@
   display: flex;
   gap: 0.4rem;
 }
+@media (max-width: 576px) {
+  .price {
+    font-size: 1.2rem;
+  }
+}
 
 .name {
   padding-top: 4px;
@@ -61,6 +79,11 @@
 }
 .name span {
   color: hsl(0, 0%, 100%);
+}
+@media (max-width: 576px) {
+  .name {
+    font-size: 1.04rem;
+  }
 }
 
 .profile {
