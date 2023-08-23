@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 .division {
-  border: 1px solid hsl(215, 51%, 70%) !important;
+  border: none !important;
+  border: 0.5px solid hsl(215, 51%, 70%) !important;
 }
 
 .cube-image {
@@ -17,7 +18,7 @@
 
 .main {
   width: 16rem;
-  height: auto;
+  box-sizing: content-box !important;
   background: hsl(216, 50%, 16%);
   margin-top: 2rem;
   border-radius: 0.7rem;
@@ -31,6 +32,7 @@
 
 .title {
   color: hsl(0, 0%, 100%);
+  font-size: 1.35rem;
 }
 
 .paragraph {
@@ -93,7 +95,6 @@
 body {
   height: 100vh;
   background: hsl(217, 54%, 11%) no-repeat fixed;
-  padding-top: 50px;
   font-family: "Outfit", sans-serif;
 }
 

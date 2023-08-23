@@ -5,7 +5,8 @@ $white-text: hsl(0 0% 100%);
 $breakpint-mobile: 576px;
 
 .division{
-    border: 1px solid $color-softblue !important;
+    border: none !important;
+    border: 0.5px solid $color-softblue !important;
 }
 .cube-image{
     width: 100%;
@@ -19,7 +20,7 @@ $breakpint-mobile: 576px;
 }
 .main{
     width: 16rem;
-    height: auto;
+    box-sizing: content-box !important;
     background: hsl(216, 50%, 16%);
     margin-top: 2rem;
     border-radius: 0.7rem;
@@ -30,6 +31,7 @@ $breakpint-mobile: 576px;
 }
 .title{
     color: $white-text;
+    font-size: 1.35rem;
 }
 .paragraph{
     color: $color-softblue;
